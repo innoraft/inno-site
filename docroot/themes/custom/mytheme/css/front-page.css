@@ -201,6 +201,27 @@ body {
   width: 29px;
 }
 
+/* line 196, ../sass/front-page.scss */
+.about-site {
+  padding: 6% 20%;
+}
+/* line 199, ../sass/front-page.scss */
+.about-site .title {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  margin-bottom: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 208, ../sass/front-page.scss */
+.about-site .description {
+  color: #777777;
+  font-family: icon;
+  font-size: 1.3em;
+  text-align: center;
+}
+
 @-webkit-keyframes bounce {
   0% {
     transform: translateY(0);

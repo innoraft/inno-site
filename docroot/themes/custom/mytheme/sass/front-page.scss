@@ -192,6 +192,27 @@ body {
 	}
 }
 
+// About site.
+.about-site {
+	padding: 6% 20%;
+
+	.title {
+		font-size: 2em;
+		font-weight: bold;
+		letter-spacing: 0.02em;
+		margin-bottom: 14px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.description {
+		color: #777777;
+		font-family: icon;
+		font-size: 1.3em;
+		text-align: center;
+	}
+}
+
 // Bounce effect.
 @-webkit-keyframes bounce {
   0%       { transform:translateY(0); }
