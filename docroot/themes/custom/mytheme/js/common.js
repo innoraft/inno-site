@@ -22,16 +22,16 @@
         }
       });
 
-      // Theme sticky header.
+      // Header after first block.
       $(window).scroll(function() {
         if ($(this).scrollTop() > viewportHeight){  
           $('.header').css({
             'background-color': '#FFFFFF',
             'border-bottom': '1px solid rgba(0, 0, 0, 0.1)',
           });
-          $('.site-logo').css('color', '#343434');
+          $('.site-logo').css('color', '#444444');
           $('.menu-button').css('margin-top', '10px');
-          $('.menu-button span').css('background-color', '#888');
+          $('.menu-button span').css('background-color', '#444444');
         }
         else{
           $('.header').css({
@@ -40,7 +40,7 @@
           });
           $('.site-logo').css('color', '#ffffff');
           $('.menu-button').css('margin-top', '14px');
-          $('.menu-button span').css('background-color', '#e5e5e5');
+          $('.menu-button span').css('background-color', '#ffffff');
         }
       });
 
@@ -57,13 +57,15 @@
         }
       });
 
-      // JS effect on menu button.
+      // CSS effect on menu button.
       $('.menu-button').click(function() {
         if ($('.menu-block').hasClass('menu-open')) {
+          $('.site-logo').addClass('site-logo-sub');
           $('.menu-button .top').addClass('menu-button-top');
           $('.menu-button .middle').addClass('menu-button-middle');
           $('.menu-button .bottom').addClass('menu-button-bottom');
         } else {
+          $('.site-logo').removeClass('site-logo-sub');
           $('.menu-button .top').removeClass('menu-button-top');
           $('.menu-button .middle').removeClass('menu-button-middle');
           $('.menu-button .bottom').removeClass('menu-button-bottom');

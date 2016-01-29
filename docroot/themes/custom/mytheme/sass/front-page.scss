@@ -5,7 +5,7 @@ body {
 
 // Menu block.
 .menu-block {
-	background-color: #3d3d3d;
+	background-color: #ffffff;
 	position: fixed;
 	z-index: 11;
 	top: -100%;
@@ -22,7 +22,6 @@ body {
 
 .sticky {
 	position: fixed;
-	font-size: 36px;
 	padding: 10px 0 8px;
 }
 
@@ -33,6 +32,10 @@ body {
 	font-family: fantasy;
 }
 
+.site-logo-sub {
+	color: #444444 !important;
+}
+
 .menu-button {
 	cursor: pointer;
 	float: right;
@@ -40,7 +43,7 @@ body {
 	margin-top: 14px;
 
 	.top, .middle, .bottom {
-		background-color: #e5e5e5;
+		background-color: #ffffff;
 		display: block;
 		height: 6px;
 		margin-bottom: 6px;
@@ -62,14 +65,17 @@ body {
 
 .menu-button-top {
 	transform: translate(0px, 17px) scale(1) rotate(45deg) !important;
+	background-color: #444444 !important;
 }
 
 .menu-button-middle {
 	opacity: 0 !important;
+	background-color: #444444 !important;
 }
 
 .menu-button-bottom {
 	transform: translate(0px, -6px) scale(1) rotate(-45deg) !important;
+	background-color: #444444 !important;
 }
 
 // Item block.
