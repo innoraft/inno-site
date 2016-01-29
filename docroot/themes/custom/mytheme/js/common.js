@@ -78,7 +78,7 @@
         if (currentItem.hasClass('projects')) {
           $('.item-info-block').css('background-color', '#4e788e');
         } else if (currentItem.hasClass('services')) {
-          $('.item-info-block').css('background-color', '#565b66');
+          $('.item-info-block').css('background-color', '#6a6f7a');
         } else if (currentItem.hasClass('blogs')) {
           $('.item-info-block').css('background-color', '#008da6');
         }
