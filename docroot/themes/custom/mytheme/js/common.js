@@ -3,7 +3,7 @@
     attach: function (context, settings) {
 
       // Set current width and height.
-      var viewportWidth = $(window).width();
+      var viewportWidth = $(window).width() - 8;
       var viewportHeight = $(window).height();
 
       $('.item-main-block').height(viewportHeight);
@@ -30,7 +30,7 @@
             'border-bottom': '1px solid rgba(0, 0, 0, 0.1)',
           });
           $('.site-logo').css('color', '#343434');
-          $('.menu-button').css('margin-top', '6px');
+          $('.menu-button').css('margin-top', '10px');
           $('.menu-button span').css('background-color', '#888');
         }
         else{

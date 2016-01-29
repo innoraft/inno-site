@@ -17,24 +17,26 @@ body {
 	width: 100%;
 	z-index: 12;
 	font-size: 40px;
-	padding: 58px 72px 0 60px;
+	padding-top: 58px;
 }
 
 .sticky {
 	position: fixed;
-	font-size: 34px;
-	padding: 10px 72px 0 60px;
+	font-size: 36px;
+	padding: 10px 0 8px;
 }
 
 .site-logo {
 	color: #ffffff;
 	float: left;
+	padding-left: 5%;
 	font-family: fantasy;
 }
 
 .menu-button {
 	cursor: pointer;
 	float: right;
+	padding-right: 5%;
 	margin-top: 14px;
 
 	.top, .middle, .bottom {
@@ -194,13 +196,12 @@ body {
 
 // About site.
 .about-site {
-	padding: 6% 20%;
+	padding: 16% 20%;
 
 	.title {
-		font-size: 2em;
+		font-size: 32px;
 		font-weight: bold;
-		letter-spacing: 0.02em;
-		margin-bottom: 14px;
+		margin-bottom: 36px;
 		text-align: center;
 		text-transform: uppercase;
 	}
@@ -208,7 +209,7 @@ body {
 	.description {
 		color: #777777;
 		font-family: icon;
-		font-size: 1.3em;
+		font-size: 26px;
 		text-align: center;
 	}
 }
