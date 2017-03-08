@@ -28,7 +28,7 @@ ul, li {
   z-index: 2;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 #toggle {
   width: 104px;
   height: 74px;
@@ -45,7 +45,7 @@ ul, li {
   -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
   transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
 }
-/* line 43, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 #toggle .patty {
   width: 24px;
   height: 4px;
@@ -56,7 +56,7 @@ ul, li {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 53, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 #toggle .patty:after {
   content: '';
   display: block;
@@ -70,7 +70,7 @@ ul, li {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 67, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 #toggle .patty:before {
   content: '';
   display: block;
@@ -84,32 +84,32 @@ ul, li {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-/* line 81, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 #toggle .patty:before {
   top: -8px;
 }
-/* line 85, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 #toggle .patty:after {
   top: 8px;
 }
-/* line 90, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 #toggle:hover {
   -moz-transition: top 0.4s;
   -o-transition: top 0.4s;
   -webkit-transition: top 0.4s;
   transition: top 0.4s;
 }
-/* line 97, ../sass/style.scss */
+/* line 96, ../sass/style.scss */
 #toggle:hover .patty:before {
   top: -9px;
 }
-/* line 101, ../sass/style.scss */
+/* line 100, ../sass/style.scss */
 #toggle:hover .patty:after {
   top: 9px;
 }
 
 /*Main Nav*/
-/* line 110, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 .nav-background {
   visibility: hidden;
   top: -10%;

@@ -8,7 +8,7 @@ sass_dir = "sass"
 images_dir = "images"
 javascripts_dir = "javascripts"
 sass_options = {:sourcemap => true}
-cache_path = '/d/.sass-cache'
+#cache_path = '/d/.sass-cache'
 
 
 
