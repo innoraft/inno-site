@@ -1,0 +1,130 @@
+/*Media Query*/
+/*Font Size*/
+/*Colors*/
+/* line 3, ../sass/style.scss */
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 7, ../sass/style.scss */
+.our-services {
+  background: #3cb987;
+}
+
+/*Main Navigation*/
+/* line 13, ../sass/style.scss */
+.nav-icon {
+  font-size: 1.875rem;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-bottom: 50px solid transparent;
+  border-left: 100px solid transparent;
+  border-top: 80px solid #ffffff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+/* line 27, ../sass/style.scss */
+#toggle {
+  width: 104px;
+  height: 74px;
+  padding: 45px 40px;
+  z-index: 1000;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -moz-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+  -o-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+  -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+  transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+}
+/* line 43, ../sass/style.scss */
+#toggle .patty {
+  width: 24px;
+  height: 4px;
+  margin: 10px 0;
+  background: #ec008c;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 53, ../sass/style.scss */
+#toggle .patty:after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 4px;
+  background: #ec008c;
+  position: absolute;
+  z-index: -1;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 67, ../sass/style.scss */
+#toggle .patty:before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 4px;
+  background: #ec008c;
+  position: absolute;
+  z-index: -1;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 81, ../sass/style.scss */
+#toggle .patty:before {
+  top: -8px;
+}
+/* line 85, ../sass/style.scss */
+#toggle .patty:after {
+  top: 8px;
+}
+/* line 90, ../sass/style.scss */
+#toggle:hover {
+  -moz-transition: top 0.4s;
+  -o-transition: top 0.4s;
+  -webkit-transition: top 0.4s;
+  transition: top 0.4s;
+}
+/* line 97, ../sass/style.scss */
+#toggle:hover .patty:before {
+  top: -9px;
+}
+/* line 101, ../sass/style.scss */
+#toggle:hover .patty:after {
+  top: 9px;
+}
+
+/*Main Nav*/
+/* line 110, ../sass/style.scss */
+.nav-background {
+  visibility: hidden;
+  top: -10%;
+  width: 100%;
+  padding: 0;
+  opacity: 0;
+  display: table-cell;
+  vertical-align: middle;
+  -moz-transform: perspective(600px) rotateX(10deg);
+  -webkit-transform: perspective(600px) rotateX(10deg);
+  transform: perspective(600px) rotateX(10deg);
+  -moz-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+  -o-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+  -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+  transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+}
+
+/*# sourceMappingURL=style.css.map */
