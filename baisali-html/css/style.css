@@ -8,123 +8,249 @@ ul, li {
 }
 
 /* line 7, ../sass/style.scss */
+.container {
+  max-width: 1200px;
+}
+
+/* line 10, ../sass/style.scss */
 .our-services {
   background: #3cb987;
 }
 
+/*Header*/
+/* line 14, ../sass/style.scss */
+header {
+  background: #263366;
+}
+
 /*Main Navigation*/
-/* line 13, ../sass/style.scss */
-.nav-icon {
-  font-size: 1.875rem;
-  cursor: pointer;
-  width: 0;
-  height: 0;
-  border-bottom: 50px solid transparent;
-  border-left: 100px solid transparent;
-  border-top: 80px solid #ffffff;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 2;
+/* line 20, ../sass/style.scss */
+.menu-outer:hover ~ .menu-close {
+  margin-right: -100px;
+}
+
+/* line 23, ../sass/style.scss */
+.menu-outer:hover .bar {
+  background: rgba(100, 200, 240, 0.9);
+}
+
+/* line 24, ../sass/style.scss */
+.menu-outer > nav ul {
+  top: 15%;
 }
 
 /* line 26, ../sass/style.scss */
-#toggle {
-  width: 104px;
-  height: 74px;
-  padding: 45px 40px;
-  z-index: 1000;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  position: absolute;
+.menu-outer {
+  overflow: hidden;
+  position: fixed;
   top: 0;
-  right: 0;
-  -moz-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-  -o-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-  -webkit-transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-  transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
-}
-/* line 42, ../sass/style.scss */
-#toggle .patty {
-  width: 24px;
-  height: 4px;
-  margin: 10px 0;
-  background: #ec008c;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-/* line 52, ../sass/style.scss */
-#toggle .patty:after {
-  content: '';
-  display: block;
-  width: 24px;
-  height: 4px;
-  background: #ec008c;
-  position: absolute;
-  z-index: -1;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-/* line 66, ../sass/style.scss */
-#toggle .patty:before {
-  content: '';
-  display: block;
-  width: 24px;
-  height: 4px;
-  background: #ec008c;
-  position: absolute;
-  z-index: -1;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-/* line 80, ../sass/style.scss */
-#toggle .patty:before {
-  top: -8px;
-}
-/* line 84, ../sass/style.scss */
-#toggle .patty:after {
-  top: 8px;
-}
-/* line 89, ../sass/style.scss */
-#toggle:hover {
-  -moz-transition: top 0.4s;
-  -o-transition: top 0.4s;
-  -webkit-transition: top 0.4s;
-  transition: top 0.4s;
-}
-/* line 96, ../sass/style.scss */
-#toggle:hover .patty:before {
-  top: -9px;
-}
-/* line 100, ../sass/style.scss */
-#toggle:hover .patty:after {
-  top: 9px;
+  font-family: 'Montserrat', serif;
+  z-index: 998;
+  width: 100%;
+  left: 100%;
+  margin-left: -100px;
+  height: 200%;
+  background: white;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
-/*Main Nav*/
-/* line 109, ../sass/style.scss */
-.nav-background {
-  visibility: hidden;
-  top: -10%;
+/* line 56, ../sass/style.scss */
+.menu-outer:hover {
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  margin-left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+/* line 67, ../sass/style.scss */
+.menu-icon {
+  z-index: 999;
+  position: absolute;
+  top: 68px;
+  left: 22px;
+  width: 20px;
+  pointer-events: none;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+}
+/* line 87, ../sass/style.scss */
+.menu-icon .bar {
+  background: #263366;
   width: 100%;
-  padding: 0;
+  height: 2px;
+  margin: 0 0 3px;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+/* line 101, ../sass/style.scss */
+.menu-outer:hover > .menu-icon {
   opacity: 0;
-  display: table-cell;
-  vertical-align: middle;
-  -moz-transform: perspective(600px) rotateX(10deg);
-  -webkit-transform: perspective(600px) rotateX(10deg);
-  transform: perspective(600px) rotateX(10deg);
-  -moz-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
-  -o-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
-  -webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
-  transition: all 0.5s cubic-bezier(0.7, 0, 0.36, 0.63);
+}
+
+/* line 104, ../sass/style.scss */
+nav {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  width: 80%;
+}
+/* line 111, ../sass/style.scss */
+nav ul {
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+  text-align: center;
+}
+/* line 119, ../sass/style.scss */
+nav ul li {
+  display: inline-block;
+  height: 230px;
+  width: 24.5%;
+}
+/* line 124, ../sass/style.scss */
+nav ul li a {
+  color: #ffffff;
+}
+
+/* line 130, ../sass/style.scss */
+.menu-outer:hover > nav ul {
+  left: 0;
+}
+
+/* line 134, ../sass/style.scss */
+nav li {
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 139, ../sass/style.scss */
+nav li a {
+  font-size: 2em;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 20px;
+  display: block;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+}
+/* line 152, ../sass/style.scss */
+nav li a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 600px), screen and (max-height: 600px) {
+  /* line 160, ../sass/style.scss */
+  nav ul {
+    font-size: .75em;
+  }
+
+  /* line 161, ../sass/style.scss */
+  nav ul a {
+    padding: 10px;
+  }
+}
+/*Menu Close*/
+/* line 164, ../sass/style.scss */
+.menu-close {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  right: 100%;
+  width: 200px;
+  height: 200px;
+  background: white;
+  cursor: pointer;
+  -webkit-transition: all ease .5s;
+  -moz-transition: all ease .5s;
+  -ms-transition: all ease .5s;
+  -o-transition: all ease .5s;
+  transition: all ease .5s;
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -ms-transform-origin: top right;
+  -o-transform-origin: top right;
+  transform-origin: top right;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 189, ../sass/style.scss */
+.menu-close .menu-icon {
+  right: 15px;
+  left: auto;
+  top: 68px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/* line 200, ../sass/style.scss */
+.menu-close .bar {
+  background: #263366;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  -webkit-transform-origin: center;
+  -moz-transform-origin: center;
+  -ms-transform-origin: center;
+  -o-transform-origin: center;
+  transform-origin: center;
+}
+/* line 211, ../sass/style.scss */
+.menu-close .bar:first-child {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 219, ../sass/style.scss */
+.menu-close .bar:last-child {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /*# sourceMappingURL=style.css.map */
