@@ -1,45 +1,63 @@
 /*Media Query*/
 /*Font Size*/
 /*Colors*/
-/* line 3, ../sass/style.scss */
+@font-face {
+  font-family: 'open_sansregular';
+  src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@media screen and (min-width: 1200px) {
+  /* line 13, ../sass/style.scss */
+  .container {
+    width: 1200px;
+  }
+}
+
+/* line 19, ../sass/style.scss */
+html {
+  font-size: 14px;
+}
+
+/* line 22, ../sass/style.scss */
 ul, li {
   padding: 0;
   margin: 0;
 }
 
-/* line 7, ../sass/style.scss */
+/* line 26, ../sass/style.scss */
 .container {
   max-width: 1200px;
 }
 
-/* line 10, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
 .our-services {
   background: #3cb987;
 }
 
 /*Header*/
-/* line 14, ../sass/style.scss */
+/* line 33, ../sass/style.scss */
 header {
   background: #263366;
 }
 
 /*Main Navigation*/
-/* line 20, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .menu-outer:hover ~ .menu-close {
   margin-right: -100px;
 }
 
-/* line 23, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .menu-outer:hover .bar {
   background: rgba(100, 200, 240, 0.9);
 }
 
-/* line 24, ../sass/style.scss */
+/* line 43, ../sass/style.scss */
 .menu-outer > nav ul {
   top: 15%;
 }
 
-/* line 26, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 .menu-outer {
   overflow: hidden;
   position: fixed;
@@ -68,7 +86,7 @@ header {
   transform: rotate(-45deg);
 }
 
-/* line 56, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .menu-outer:hover {
   background: rgba(0, 0, 0, 0.5);
   left: 0;
@@ -80,7 +98,7 @@ header {
   transform: rotate(0deg);
 }
 
-/* line 67, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .menu-icon {
   z-index: 999;
   position: absolute;
@@ -99,7 +117,7 @@ header {
   -o-transition: all ease .5s;
   transition: all ease .5s;
 }
-/* line 87, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 .menu-icon .bar {
   background: #263366;
   width: 100%;
@@ -112,12 +130,12 @@ header {
   transition: all ease .5s;
 }
 
-/* line 101, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .menu-outer:hover > .menu-icon {
   opacity: 0;
 }
 
-/* line 104, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 nav {
   position: absolute;
   top: 25%;
@@ -125,7 +143,7 @@ nav {
   transform: translate(-50%, -25%);
   width: 80%;
 }
-/* line 111, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 nav ul {
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
@@ -134,29 +152,338 @@ nav ul {
   transition: all ease .5s;
   text-align: center;
 }
-/* line 119, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 nav ul li {
   display: inline-block;
-  height: 230px;
   width: 24.5%;
 }
-/* line 124, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 nav ul li a {
   color: #ffffff;
+  font-size: 1.125rem;
+  font-family: 'open_sansregular';
+}
+/* line 143, ../sass/style.scss */
+nav ul li a:hover {
+  text-decoration: none;
+}
+/* line 147, ../sass/style.scss */
+nav ul li .home {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  padding: 60px 0 0px;
+  line-height: 140px;
+  overflow: hidden;
+  background: #263366;
+}
+/* line 15, ../sass/partial/_mixins.scss */
+nav ul li .home:before {
+  content: " ";
+  display: block;
+  padding: 0;
+  width: 78px;
+  height: 67px;
+  position: absolute;
+  top: -70px;
+  left: 35%;
+  transition: all 200ms ease;
+  opacity: 0.0;
+}
+/* line 29, ../sass/partial/_mixins.scss */
+nav ul li .home:hover:before {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-decoration: none;
+  opacity: 1.0;
+}
+/* line 150, ../sass/style.scss */
+nav ul li .home:before {
+  background: url(../images/home-icon.png) no-repeat 0 0;
+}
+/* line 154, ../sass/style.scss */
+nav ul li .approach {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  padding: 60px 0 0px;
+  line-height: 140px;
+  overflow: hidden;
+  background: #f53d3d;
+}
+/* line 15, ../sass/partial/_mixins.scss */
+nav ul li .approach:before {
+  content: " ";
+  display: block;
+  padding: 0;
+  width: 78px;
+  height: 67px;
+  position: absolute;
+  top: -70px;
+  left: 35%;
+  transition: all 200ms ease;
+  opacity: 0.0;
+}
+/* line 29, ../sass/partial/_mixins.scss */
+nav ul li .approach:hover:before {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-decoration: none;
+  opacity: 1.0;
+}
+/* line 157, ../sass/style.scss */
+nav ul li .approach:before {
+  background: url(../images/approach.png) no-repeat 0 0;
+}
+/* line 161, ../sass/style.scss */
+nav ul li .services {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  padding: 60px 0 0px;
+  line-height: 140px;
+  overflow: hidden;
+  background: #041e34;
+}
+/* line 15, ../sass/partial/_mixins.scss */
+nav ul li .services:before {
+  content: " ";
+  display: block;
+  padding: 0;
+  width: 78px;
+  height: 67px;
+  position: absolute;
+  top: -70px;
+  left: 35%;
+  transition: all 200ms ease;
+  opacity: 0.0;
+}
+/* line 29, ../sass/partial/_mixins.scss */
+nav ul li .services:hover:before {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-decoration: none;
+  opacity: 1.0;
+}
+/* line 164, ../sass/style.scss */
+nav ul li .services:before {
+  background: url(../images/services.png) no-repeat 0 0;
+}
+/* line 168, ../sass/style.scss */
+nav ul li .work {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  padding: 60px 0 0px;
+  line-height: 140px;
+  overflow: hidden;
+  background: #3cb987;
+}
+/* line 15, ../sass/partial/_mixins.scss */
+nav ul li .work:before {
+  content: " ";
+  display: block;
+  padding: 0;
+  width: 78px;
+  height: 67px;
+  position: absolute;
+  top: -70px;
+  left: 35%;
+  transition: all 200ms ease;
+  opacity: 0.0;
+}
+/* line 29, ../sass/partial/_mixins.scss */
+nav ul li .work:hover:before {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-decoration: none;
+  opacity: 1.0;
+}
+/* line 171, ../sass/style.scss */
+nav ul li .work:before {
+  background: url(../images/work.png) no-repeat 0 0;
+}
+/* line 175, ../sass/style.scss */
+nav ul li .study {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  padding: 60px 0 0px;
+  line-height: 140px;
+  overflow: hidden;
+  background: #fc6308;
+}
+/* line 15, ../sass/partial/_mixins.scss */
+nav ul li .study:before {
+  content: " ";
+  display: block;
+  padding: 0;
+  width: 78px;
+  height: 67px;
+  position: absolute;
+  top: -70px;
+  left: 35%;
+  transition: all 200ms ease;
+  opacity: 0.0;
+}
+/* line 29, ../sass/partial/_mixins.scss */
+nav ul li .study:hover:before {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-decoration: none;
+  opacity: 1.0;
+}
+/* line 178, ../sass/style.scss */
+nav ul li .study:before {
+  background: url(../images/case.png) no-repeat 0 0;
+}
+/* line 182, ../sass/style.scss */
+nav ul li .about {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  padding: 60px 0 0px;
+  line-height: 140px;
+  overflow: hidden;
+  background: #282640;
+}
+/* line 15, ../sass/partial/_mixins.scss */
+nav ul li .about:before {
+  content: " ";
+  display: block;
+  padding: 0;
+  width: 78px;
+  height: 67px;
+  position: absolute;
+  top: -70px;
+  left: 35%;
+  transition: all 200ms ease;
+  opacity: 0.0;
+}
+/* line 29, ../sass/partial/_mixins.scss */
+nav ul li .about:hover:before {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-decoration: none;
+  opacity: 1.0;
+}
+/* line 185, ../sass/style.scss */
+nav ul li .about:before {
+  background: url(../images/about.png) no-repeat 0 0;
+}
+/* line 189, ../sass/style.scss */
+nav ul li .contact {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  padding: 60px 0 0px;
+  line-height: 140px;
+  overflow: hidden;
+  background: #00569c;
+}
+/* line 15, ../sass/partial/_mixins.scss */
+nav ul li .contact:before {
+  content: " ";
+  display: block;
+  padding: 0;
+  width: 78px;
+  height: 67px;
+  position: absolute;
+  top: -70px;
+  left: 35%;
+  transition: all 200ms ease;
+  opacity: 0.0;
+}
+/* line 29, ../sass/partial/_mixins.scss */
+nav ul li .contact:hover:before {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-decoration: none;
+  opacity: 1.0;
+}
+/* line 192, ../sass/style.scss */
+nav ul li .contact:before {
+  background: url(../images/contact.png) no-repeat 0 0;
+}
+/* line 196, ../sass/style.scss */
+nav ul li .block {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  padding: 60px 0 0px;
+  line-height: 140px;
+  overflow: hidden;
+  background: #f0b707;
+}
+/* line 15, ../sass/partial/_mixins.scss */
+nav ul li .block:before {
+  content: " ";
+  display: block;
+  padding: 0;
+  width: 78px;
+  height: 67px;
+  position: absolute;
+  top: -70px;
+  left: 35%;
+  transition: all 200ms ease;
+  opacity: 0.0;
+}
+/* line 29, ../sass/partial/_mixins.scss */
+nav ul li .block:hover:before {
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  text-decoration: none;
+  opacity: 1.0;
+}
+/* line 199, ../sass/style.scss */
+nav ul li .block:before {
+  background: url(../images/block.png) no-repeat 0 0;
 }
 
-/* line 130, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .menu-outer:hover > nav ul {
   left: 0;
 }
 
-/* line 134, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 nav li {
   list-style: none;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 139, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 nav li a {
   font-size: 2em;
   color: rgba(255, 255, 255, 0.8);
@@ -170,24 +497,24 @@ nav li a {
   -o-transition: all ease .5s;
   transition: all ease .5s;
 }
-/* line 152, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 nav li a:hover {
   color: white;
 }
 
 @media screen and (max-width: 600px), screen and (max-height: 600px) {
-  /* line 160, ../sass/style.scss */
+  /* line 234, ../sass/style.scss */
   nav ul {
     font-size: .75em;
   }
 
-  /* line 161, ../sass/style.scss */
+  /* line 235, ../sass/style.scss */
   nav ul a {
     padding: 10px;
   }
 }
 /*Menu Close*/
-/* line 164, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 .menu-close {
   z-index: 9999;
   position: fixed;
@@ -213,7 +540,7 @@ nav li a:hover {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 189, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .menu-close .menu-icon {
   right: 15px;
   left: auto;
@@ -224,7 +551,7 @@ nav li a:hover {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 200, ../sass/style.scss */
+/* line 274, ../sass/style.scss */
 .menu-close .bar {
   background: #263366;
   width: 100%;
@@ -236,7 +563,7 @@ nav li a:hover {
   -o-transform-origin: center;
   transform-origin: center;
 }
-/* line 211, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 .menu-close .bar:first-child {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -244,7 +571,7 @@ nav li a:hover {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 219, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 .menu-close .bar:last-child {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);

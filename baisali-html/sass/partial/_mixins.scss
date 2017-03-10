@@ -1,1 +1,37 @@
 @import 'variables';
+
+@mixin menu-icon {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  padding-right: 2.2em;
+  padding: 60px 0 0px;
+  line-height: 140px;
+  overflow: hidden;
+  
+  
+  &:before {
+    content: " ";
+    display: block;
+    padding: 0;
+    width: 78px;
+    height: 67px;
+    position: absolute;
+    top: -70px;
+    left: 35%;
+    transition: all 200ms ease;
+    opacity: 0.0;
+  }
+  
+    &:hover {
+        &:before {
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%, -20%);
+          text-decoration: none;
+          opacity: 1.0;
+        }
+      }
+}

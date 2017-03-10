@@ -1,5 +1,24 @@
 // Importing Libraries.
 @import 'partial/importer';
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+// Overriding bootstrap default width size.
+.container {
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+html {
+  font-size: 14px;
+}
 ul, li {
   padding: 0;
   margin: 0;
@@ -107,25 +126,82 @@ nav {
   left: 50%;
   transform: translate(-50%, -25%);
   width: 80%;
-  
   ul {
-  -webkit-transition: all ease .5s;
-  -moz-transition: all ease .5s;
-  -ms-transition: all ease .5s;
-  -o-transition: all ease .5s;
-  transition: all ease .5s;
-  text-align: center;
-  
-  li {
-    display: inline-block;
-    height: 230px;
-    width: 24.5%;
-    
-    a {
-      color: $white-color;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s;
+    -ms-transition: all ease .5s;
+    -o-transition: all ease .5s;
+    transition: all ease .5s;
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 24.5%;
+      a {
+        color: $white-color;
+        font-size: $font-size-18;
+        font-family: 'open_sansregular';
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .home {
+        @include menu-icon;
+        background: $header-blue;
+        &:before {
+          background: url(../images/home-icon.png) no-repeat 0 0;
+        }
+      }
+      .approach {
+        @include menu-icon;
+        background: $red;
+        &:before {
+          background: url(../images/approach.png) no-repeat 0 0;
+        }
+      }
+      .services {
+        @include menu-icon;
+        background: #041e34;
+        &:before {
+          background: url(../images/services.png) no-repeat 0 0;
+        }
+      }
+      .work {
+        @include menu-icon;
+        background: $section-green;
+        &:before {
+          background: url(../images/work.png) no-repeat 0 0;
+        }
+      }
+      .study {
+        @include menu-icon;
+        background: $orange;
+        &:before {
+          background: url(../images/case.png) no-repeat 0 0;
+        }
+      }
+      .about {
+        @include menu-icon;
+        background: $dark-blue;
+        &:before {
+          background: url(../images/about.png) no-repeat 0 0;
+        }
+      }
+      .contact {
+        @include menu-icon;
+        background: $sky-blue;
+        &:before {
+          background: url(../images/contact.png) no-repeat 0 0;
+        }
+      }
+      .block {
+        @include menu-icon;
+        background: $yellow;
+        &:before {
+          background: url(../images/block.png) no-repeat 0 0;
+        }
+      }
     }
   }
-}
 }
 .menu-outer:hover > nav ul {
   left: 0;
@@ -135,7 +211,6 @@ nav {
     list-style: none;
     text-align: center;
     text-transform: uppercase;
-    
     a {
       font-size: 2em;
       color: rgba(255, 255, 255, .8);
@@ -148,7 +223,6 @@ nav {
       -ms-transition: all ease .5s;
       -o-transition: all ease .5s;
       transition: all ease .5s;
-      
       &:hover {
         color: rgba(255, 255, 255, 1);
       }
