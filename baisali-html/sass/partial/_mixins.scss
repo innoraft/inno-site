@@ -10,7 +10,7 @@
   padding: 60px 0 0px;
   line-height: 140px;
   overflow: hidden;
-  
+  margin: 0;  
   
   &:before {
     content: " ";
@@ -34,4 +34,13 @@
           opacity: 1.0;
         }
       }
+}
+
+/*Border Radius*/
+@mixin border-radius {
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+  position: absolute;
 }

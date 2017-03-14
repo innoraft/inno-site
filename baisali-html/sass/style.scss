@@ -1,14 +1,6 @@
 // Importing Libraries.
 @import 'partial/importer';
 
-@font-face {
-    font-family: 'open_sansregular';
-    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
-         url('../fonts/opensans-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 // Overriding bootstrap default width size.
 .container {
   @media screen and (min-width: 1200px) {
@@ -32,6 +24,10 @@ ul, li {
 /*Header*/
 header {
   background: $header-blue;
+  
+  .logo {
+    padding-top: 27px;
+  }
 }
 
 /*Main Navigation*/
@@ -125,7 +121,7 @@ nav {
   top: 25%;
   left: 50%;
   transform: translate(-50%, -25%);
-  width: 80%;
+  width: 70%;
   ul {
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
@@ -299,5 +295,55 @@ nav {
     }
   }
 }
- 
 
+/*Header*/
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+  color: $white-color;
+  font-family: 'latolight';
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 210px;
+  
+  span {
+    clear: both;
+    display: block;
+    font-family: 'latobold';
+  }
+} 
+
+.drupal-circle {
+  @include border-radius;
+  background: $section-green;
+  width: 240px;
+  height: 240px;
+  left:130px;
+  top: 0;
+}
+
+.html-circle {
+  @include border-radius;
+  background: $red;
+  width: 220px;
+  height: 220px;
+  left: 54px;
+  top: 240px;
+}
+.jquery-circle {
+  @include border-radius;
+  background: $orange;
+  width: 165px;
+  height: 165px;
+  left:250px;
+  top: 410px;
+  
+}
+.inno-circle {
+  @include border-radius;
+  background:$testimonial-dark-blue;
+  width: 310px;
+  height: 310px;
+  left: 340px;
+  top: 130px;
+}

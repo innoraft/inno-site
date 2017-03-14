@@ -1,63 +1,98 @@
 /*Media Query*/
 /*Font Size*/
 /*Colors*/
+/*Border Radius*/
 @font-face {
   font-family: 'open_sansregular';
   src: url("../fonts/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/opensans-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'latolight';
+  src: url("../fonts/lato-light-webfont.woff2") format("woff2"), url("../fonts/lato-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latobold';
+  src: url("../fonts/lato-bold-webfont.woff2") format("woff2"), url("../fonts/lato-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latomedium';
+  src: url("../fonts/lato-medium-webfont.woff2") format("woff2"), url("../fonts/lato-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latosemibold';
+  src: url("../fonts/lato-semibold-webfont.woff2") format("woff2"), url("../fonts/lato-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'latothin';
+  src: url("../fonts/lato-thin-webfont.woff2") format("woff2"), url("../fonts/lato-thin-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 @media screen and (min-width: 1200px) {
-  /* line 13, ../sass/style.scss */
+  /* line 5, ../sass/style.scss */
   .container {
     width: 1200px;
   }
 }
 
-/* line 19, ../sass/style.scss */
+/* line 11, ../sass/style.scss */
 html {
   font-size: 14px;
 }
 
-/* line 22, ../sass/style.scss */
+/* line 14, ../sass/style.scss */
 ul, li {
   padding: 0;
   margin: 0;
 }
 
-/* line 26, ../sass/style.scss */
+/* line 18, ../sass/style.scss */
 .container {
   max-width: 1200px;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 .our-services {
   background: #3cb987;
 }
 
 /*Header*/
-/* line 33, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 header {
   background: #263366;
 }
+/* line 28, ../sass/style.scss */
+header .logo {
+  padding-top: 27px;
+}
 
 /*Main Navigation*/
-/* line 39, ../sass/style.scss */
+/* line 35, ../sass/style.scss */
 .menu-outer:hover ~ .menu-close {
   margin-right: -100px;
 }
 
-/* line 42, ../sass/style.scss */
+/* line 38, ../sass/style.scss */
 .menu-outer:hover .bar {
   background: rgba(100, 200, 240, 0.9);
 }
 
-/* line 43, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 .menu-outer > nav ul {
   top: 15%;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .menu-outer {
   overflow: hidden;
   position: fixed;
@@ -86,7 +121,7 @@ header {
   transform: rotate(-45deg);
 }
 
-/* line 75, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 .menu-outer:hover {
   background: rgba(0, 0, 0, 0.5);
   left: 0;
@@ -98,7 +133,7 @@ header {
   transform: rotate(0deg);
 }
 
-/* line 86, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 .menu-icon {
   z-index: 999;
   position: absolute;
@@ -117,7 +152,7 @@ header {
   -o-transition: all ease .5s;
   transition: all ease .5s;
 }
-/* line 106, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .menu-icon .bar {
   background: #263366;
   width: 100%;
@@ -130,20 +165,20 @@ header {
   transition: all ease .5s;
 }
 
-/* line 120, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .menu-outer:hover > .menu-icon {
   opacity: 0;
 }
 
-/* line 123, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 nav {
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translate(-50%, -25%);
-  width: 80%;
+  width: 70%;
 }
-/* line 129, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 nav ul {
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
@@ -152,22 +187,22 @@ nav ul {
   transition: all ease .5s;
   text-align: center;
 }
-/* line 136, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 nav ul li {
   display: inline-block;
   width: 24.5%;
 }
-/* line 139, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 nav ul li a {
   color: #ffffff;
   font-size: 1.125rem;
   font-family: 'open_sansregular';
 }
-/* line 143, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 nav ul li a:hover {
   text-decoration: none;
 }
-/* line 147, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 nav ul li .home {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -178,6 +213,7 @@ nav ul li .home {
   padding: 60px 0 0px;
   line-height: 140px;
   overflow: hidden;
+  margin: 0;
   background: #263366;
 }
 /* line 15, ../sass/partial/_mixins.scss */
@@ -201,11 +237,11 @@ nav ul li .home:hover:before {
   text-decoration: none;
   opacity: 1.0;
 }
-/* line 150, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 nav ul li .home:before {
   background: url(../images/home-icon.png) no-repeat 0 0;
 }
-/* line 154, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 nav ul li .approach {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -216,6 +252,7 @@ nav ul li .approach {
   padding: 60px 0 0px;
   line-height: 140px;
   overflow: hidden;
+  margin: 0;
   background: #f53d3d;
 }
 /* line 15, ../sass/partial/_mixins.scss */
@@ -239,11 +276,11 @@ nav ul li .approach:hover:before {
   text-decoration: none;
   opacity: 1.0;
 }
-/* line 157, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 nav ul li .approach:before {
   background: url(../images/approach.png) no-repeat 0 0;
 }
-/* line 161, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 nav ul li .services {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -254,6 +291,7 @@ nav ul li .services {
   padding: 60px 0 0px;
   line-height: 140px;
   overflow: hidden;
+  margin: 0;
   background: #041e34;
 }
 /* line 15, ../sass/partial/_mixins.scss */
@@ -277,11 +315,11 @@ nav ul li .services:hover:before {
   text-decoration: none;
   opacity: 1.0;
 }
-/* line 164, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 nav ul li .services:before {
   background: url(../images/services.png) no-repeat 0 0;
 }
-/* line 168, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 nav ul li .work {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -292,6 +330,7 @@ nav ul li .work {
   padding: 60px 0 0px;
   line-height: 140px;
   overflow: hidden;
+  margin: 0;
   background: #3cb987;
 }
 /* line 15, ../sass/partial/_mixins.scss */
@@ -315,11 +354,11 @@ nav ul li .work:hover:before {
   text-decoration: none;
   opacity: 1.0;
 }
-/* line 171, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 nav ul li .work:before {
   background: url(../images/work.png) no-repeat 0 0;
 }
-/* line 175, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 nav ul li .study {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -330,6 +369,7 @@ nav ul li .study {
   padding: 60px 0 0px;
   line-height: 140px;
   overflow: hidden;
+  margin: 0;
   background: #fc6308;
 }
 /* line 15, ../sass/partial/_mixins.scss */
@@ -353,11 +393,11 @@ nav ul li .study:hover:before {
   text-decoration: none;
   opacity: 1.0;
 }
-/* line 178, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 nav ul li .study:before {
   background: url(../images/case.png) no-repeat 0 0;
 }
-/* line 182, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 nav ul li .about {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -368,6 +408,7 @@ nav ul li .about {
   padding: 60px 0 0px;
   line-height: 140px;
   overflow: hidden;
+  margin: 0;
   background: #282640;
 }
 /* line 15, ../sass/partial/_mixins.scss */
@@ -391,11 +432,11 @@ nav ul li .about:hover:before {
   text-decoration: none;
   opacity: 1.0;
 }
-/* line 185, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 nav ul li .about:before {
   background: url(../images/about.png) no-repeat 0 0;
 }
-/* line 189, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 nav ul li .contact {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -406,6 +447,7 @@ nav ul li .contact {
   padding: 60px 0 0px;
   line-height: 140px;
   overflow: hidden;
+  margin: 0;
   background: #00569c;
 }
 /* line 15, ../sass/partial/_mixins.scss */
@@ -429,11 +471,11 @@ nav ul li .contact:hover:before {
   text-decoration: none;
   opacity: 1.0;
 }
-/* line 192, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 nav ul li .contact:before {
   background: url(../images/contact.png) no-repeat 0 0;
 }
-/* line 196, ../sass/style.scss */
+/* line 192, ../sass/style.scss */
 nav ul li .block {
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -444,6 +486,7 @@ nav ul li .block {
   padding: 60px 0 0px;
   line-height: 140px;
   overflow: hidden;
+  margin: 0;
   background: #f0b707;
 }
 /* line 15, ../sass/partial/_mixins.scss */
@@ -467,23 +510,23 @@ nav ul li .block:hover:before {
   text-decoration: none;
   opacity: 1.0;
 }
-/* line 199, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 nav ul li .block:before {
   background: url(../images/block.png) no-repeat 0 0;
 }
 
-/* line 206, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .menu-outer:hover > nav ul {
   left: 0;
 }
 
-/* line 210, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 nav li {
   list-style: none;
   text-align: center;
   text-transform: uppercase;
 }
-/* line 214, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 nav li a {
   font-size: 2em;
   color: rgba(255, 255, 255, 0.8);
@@ -497,24 +540,24 @@ nav li a {
   -o-transition: all ease .5s;
   transition: all ease .5s;
 }
-/* line 226, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 nav li a:hover {
   color: white;
 }
 
 @media screen and (max-width: 600px), screen and (max-height: 600px) {
-  /* line 234, ../sass/style.scss */
+  /* line 230, ../sass/style.scss */
   nav ul {
     font-size: .75em;
   }
 
-  /* line 235, ../sass/style.scss */
+  /* line 231, ../sass/style.scss */
   nav ul a {
     padding: 10px;
   }
 }
 /*Menu Close*/
-/* line 238, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .menu-close {
   z-index: 9999;
   position: fixed;
@@ -540,7 +583,7 @@ nav li a:hover {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 263, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .menu-close .menu-icon {
   right: 15px;
   left: auto;
@@ -551,7 +594,7 @@ nav li a:hover {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-/* line 274, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .menu-close .bar {
   background: #263366;
   width: 100%;
@@ -563,7 +606,7 @@ nav li a:hover {
   -o-transform-origin: center;
   transform-origin: center;
 }
-/* line 285, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 .menu-close .bar:first-child {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -571,13 +614,87 @@ nav li a:hover {
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-/* line 293, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 .menu-close .bar:last-child {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+
+/*Header*/
+/* line 300, ../sass/style.scss */
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+  color: #ffffff;
+  font-family: 'latolight';
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-top: 210px;
+}
+/* line 309, ../sass/style.scss */
+h1 span {
+  clear: both;
+  display: block;
+  font-family: 'latobold';
+}
+
+/* line 316, ../sass/style.scss */
+.drupal-circle {
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+  position: absolute;
+  background: #3cb987;
+  width: 240px;
+  height: 240px;
+  left: 130px;
+  top: 0;
+}
+
+/* line 325, ../sass/style.scss */
+.html-circle {
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+  position: absolute;
+  background: #f53d3d;
+  width: 220px;
+  height: 220px;
+  left: 54px;
+  top: 240px;
+}
+
+/* line 333, ../sass/style.scss */
+.jquery-circle {
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+  position: absolute;
+  background: #fc6308;
+  width: 165px;
+  height: 165px;
+  left: 250px;
+  top: 410px;
+}
+
+/* line 342, ../sass/style.scss */
+.inno-circle {
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px solid #000000;
+  position: absolute;
+  background: #052641;
+  width: 310px;
+  height: 310px;
+  left: 340px;
+  top: 130px;
 }
 
 /*# sourceMappingURL=style.css.map */
