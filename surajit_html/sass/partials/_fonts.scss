@@ -1,0 +1,18 @@
+//Font for all Sites.
+
+// Import Compass library.
+@import 'compass';
+
+// Source Sans Pro Bold
+@include font-face('ss-bold', font-files('/fonts/open_sans/opensans-bold-webfont.woff'));
+
+// Source Sans Pro Regular
+@include font-face('ss-regular', font-files('/fonts/open_sans/opensans-regular-webfont.woff'));
+
+// Source Sans Pro Semi Bold
+@include font-face('ss-semibold', font-files('/fonts/open_sans/opensans-semibold-webfont.woff'));
+
+
+// Source Sans Pro Light
+@include font-face('ss-light', font-files('/fonts/open_sans/opensans-light-webfont.woff'));
+
