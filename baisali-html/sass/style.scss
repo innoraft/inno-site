@@ -11,16 +11,16 @@
 html {
   font-size: 14px;
 }
+
 ul, li {
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 .container {
   max-width: 1200px;
 }
-.our-services {
-  background: $section-green;
-}
+
 /*Header*/
 header {
   background: $header-blue;
@@ -30,6 +30,19 @@ header {
   }
 }
 
+h2 {
+  font: 50px/50px 'open_sansbold';
+  text-transform: uppercase;
+  margin: 100px 0 0;
+}
+.subtitle {
+  font: 36px/40px 'open_sanslight';
+  text-transform: uppercase;
+}
+body {
+  font: 16px/24px 'open_sansregular';
+  color: $text-grey;
+}
 /*Main Navigation*/
 
 .menu-outer:hover ~ .menu-close {
@@ -298,13 +311,14 @@ nav {
 
 /*Header*/
 h1 {
-  font-size: 50px;
-  line-height: 60px;
-  color: $white-color;
-  font-family: 'latolight';
-  font-weight: normal;
-  text-transform: uppercase;
-  margin-top: 210px;
+    font-size: 50px;
+    line-height: 50px;
+    color: $white-color;
+    font-family: 'latolight';
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 210px;
+    padding-left: 100px;
   
   span {
     clear: both;
@@ -313,37 +327,374 @@ h1 {
   }
 } 
 
+.sub-heading {
+  font-family: 'open_sanslight';
+  font-size:$font-size-22;
+  color: $white-color;
+  padding-left: 100px;
+}
+
+.left-tagline {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  
+  font-family: 'open_sansregular';
+  font-size: $font-size-16;
+  color: $white-color;
+  position: absolute;
+  left: 0;
+  bottom: 105px;
+  text-transform: uppercase;
+  letter-spacing: 0px;
+}
+
 .drupal-circle {
   @include border-radius;
-  background: $section-green;
-  width: 240px;
-  height: 240px;
+  width: 230px;
+  height: 230px;
   left:130px;
   top: 0;
 }
 
 .html-circle {
   @include border-radius;
-  background: $red;
-  width: 220px;
-  height: 220px;
+  width: 210px;
+  height: 210px;
   left: 54px;
   top: 240px;
 }
 .jquery-circle {
   @include border-radius;
-  background: $orange;
-  width: 165px;
-  height: 165px;
-  left:250px;
+  width: 140px;
+  height: 140px;
+  left:230px;
   top: 410px;
   
 }
 .inno-circle {
   @include border-radius;
-  background:$testimonial-dark-blue;
-  width: 310px;
-  height: 310px;
-  left: 340px;
-  top: 130px;
+  width: 280px;
+  height: 280px;
+  left: 310px;
+  top: 160px;
 }
+
+/*Social Icons*/
+.social-icons {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    width: 30px;
+  
+  li{
+    margin: 0 0 17px;
+    a {
+      width: 18px;
+      display: block;
+      transition: all 200ms ease;
+    }
+    .twitter {
+        background: url(../images/twitter-icon.png) no-repeat 0 0;
+        @include social-icons;
+      
+        &:hover {
+          background: url(../images/twitter-icon.png) no-repeat 0 -17px;
+          @include social-icons;
+        }
+      }
+    
+    .fb {
+        background: url(../images/fb-icon.png) no-repeat 0 0;
+        @include social-icons;
+      
+        &:hover {
+          background: url(../images/fb-icon.png) no-repeat 0 -19px;
+          @include social-icons;
+        }
+      }
+    
+    .in {
+        background: url(../images/in-icon.png) no-repeat 0 0;
+        @include social-icons;
+        height: 16px;
+      
+        &:hover {
+          background: url(../images/in-icon.png) no-repeat 0 -16px;
+          @include social-icons;
+          height: 16px;
+        }
+      }
+    .git {
+        background: url(../images/git-icon.png) no-repeat 0 0;
+        @include social-icons;
+      
+        &:hover {
+          background: url(../images/git-icon.png) no-repeat 0 -19px;
+          @include social-icons;
+        }
+      }
+    
+  }
+}
+
+/*About Us Section*/
+
+.about-us {
+  h2 {
+    color: $black-color;
+    margin-bottom: 35px;
+  }
+  .subtitle {
+    color: $black-color;
+    margin-bottom: 25px;
+    margin-top: 66px;
+  }
+  .button {
+    @include button;
+    margin-top: 25px;
+    
+      &:hover {
+        background-color: $button-grey;
+        color: $white-color;
+        text-decoration: none;
+    }
+  }
+  .about-img-block {
+    @include half-bg;
+    padding: 88px 0 38px 160px;
+    
+    .about-img {
+      width: 95%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/*Our Services*/
+.our-services {
+  background: $section-green;
+  
+  h2 {
+    color: $white-color;
+    margin-bottom: 95px;
+  }
+  .sti-menu{
+	width:100%;
+	position:relative;
+	margin:60px auto 0 auto;
+}
+.sti-menu li{
+	float:left;
+	width:22.4%;
+	height:300px;
+	margin:1px;
+    border: #fff 4px solid;
+    margin: 0 15px;
+  
+  @media screen and(max-width:$md){
+    width: 21.8%;
+    margin: 0 10px;
+  }
+  
+}
+.sti-menu li a{
+	display:block;
+	overflow:hidden;
+	background: #3cb987;
+	text-align:center;
+	height:100%;
+	width:100%;
+	position:relative;
+}
+.sti-menu li a h2{
+	font:30px/32px 'open_sanscondensed_light';
+    color: $white-color;
+	text-transform:uppercase;
+	position:absolute;
+	width:30px;
+	top:30px;
+	left:30px;
+    margin: 0;
+  span {
+        background: url(../images/triangle.png) no-repeat 0 -22px;
+        display: block;
+        width: 28px;
+        height: 22px;
+      } 
+}
+.sti-menu li a h3{
+	font-family: 'open_sansregular';
+	font-size: $font-size-24;
+    text-transform: uppercase;
+	color: #fff;
+	position:absolute;
+	bottom:20px;
+	left:30px;
+	width:180px;
+    text-align: left;
+}
+.sti-icon{
+	position:absolute;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	top: 85px;
+    left:70px;
+   
+}
+.sti-icon-care{
+	background-image:url(../images/strategy-img.png);
+    width:100px;
+	height:104px;
+}
+.sti-icon-alternative{
+	background-image:url(../images/ui-img.png);
+    width:120px;
+	height:122px;
+}
+.sti-icon-family{
+	background-image:url(../images/website-img.png);
+    width:109px;
+	height:104px;
+}
+.sti-icon-info{
+	background-image:url(../images/seo-img.png);
+    width: 105px;
+    height: 105px;
+}
+}
+
+/*Our Process*/
+.our-process {
+  background: $process-blue;
+  color: $white-color;
+  
+  h2 {
+    text-align: center;
+  }
+  
+  h3 {
+    font: 36px/40px 'open_sanslight';
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .left-process {
+    @include process-block;
+    float: left;
+    
+    h4 {
+      @include heading;
+    }
+  }
+
+  .right-process {
+    @include process-block;
+    float: right;
+    
+    h4 {
+      @include heading;
+    }
+  }
+  .process-icons-right {
+    @include process-icon;
+    right: -65px;
+    
+    .processicon {
+      position: absolute;
+      left: 35px;
+      top: 39px;
+      z-index: 4;
+      width: 30px;
+      height: 30px;
+    }
+    
+   .processimg {
+      @include process-img;
+    }
+    .process-number {
+      position: absolute;
+      right: 8px;
+      top: 5px;
+      color: $dark-blue;
+      font: 13px/16px 'open_sanscondensed_light';
+      z-index: 4;
+    }
+  }
+  .process-icons-left {
+    @include process-icon;
+    left: -74px;
+    
+     .processimg {
+      @include process-img;
+    }
+    .processicon {
+      position: absolute;
+      right: 35px;
+      top: 39px;
+      z-index: 4;
+      width: 30px;
+      height: 30px;
+    }
+    
+    .process-number {
+      position: absolute;
+      left: 11px;
+      top: 5px;
+      color: $dark-blue;
+      font: 13px/16px 'open_sanscondensed_light';
+      z-index: 4;
+    }
+  }
+}
+
+/*Our Work*/
+.img-left {
+  float: left;
+  @include our-work;
+  
+  .img-content {
+    @include captionimg;
+    right: -25%;
+    top: 25%;
+    z-index: 4;
+    
+  }
+}
+  
+.img-right {
+  float: right;
+  @include our-work;
+  
+  .img-content {
+    @include captionimg;
+    left: -25%;
+    top: 25%;
+    z-index: 4;
+    
+  }
+}
+
+.caption-heading {
+  font:800 32px/40px 'open_sansregular';
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.button {
+    @include button;
+    margin-top: 25px;
+    float: right;
+  
+      &:hover {
+        background-color: $button-grey;
+        color: $white-color;
+        text-decoration: none;
+    }
+  }
