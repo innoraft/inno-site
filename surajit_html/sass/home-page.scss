@@ -77,6 +77,7 @@
       }
     }
   }
+  
   /* me css start here  */
   .overlay {
     position: fixed;
@@ -239,7 +240,9 @@
       left: 0;
     }
   }
-  /* me css end here  */
+  /* menu css end here  */
+  
+  
   /*   banner content css below  */
   .best {
     color: $white;
@@ -424,6 +427,108 @@ line {
 }
 
 // BLOCK 3 OR SERVICE SECTION CSS START BELOW 
+
+
+/*Our Services*/
+.our-services {
+  background: $service-bg-color;
+  padding-bottom: 165px;
+  
+  h2 {
+    color: $white;
+    margin-bottom: 95px;
+  }
+  .sti-menu{
+	width:100%;
+	position:relative;
+	margin: 45px 0 0 0;
+    padding: 0;
+}
+.sti-menu li{
+	float:left;
+	width:22.4%;
+	height:285px;
+	margin:1px;
+    border: #fff 4px solid;
+    margin: 0 15px;
+    list-style-type: none;
+  
+  @media screen and(max-width:$md){
+    width: 21.8%;
+    margin: 0 10px;
+  }
+  
+}
+.sti-menu li a{
+	display:block;
+	overflow:hidden;
+	background: #3cb987;
+	text-align:center;
+	height:100%;
+	width:100%;
+	position:relative;
+}
+.sti-menu li a h2{
+	font:30px/32px 'open_sanscondensed_light';
+    color: $white;
+	text-transform:uppercase;
+	position:absolute;
+	width:30px;
+	top:30px;
+	left:30px;
+    margin: 0;
+  span {
+        background: url(../images/triangle.png) no-repeat 0 -22px;
+        display: block;
+        width: 28px;
+        height: 22px;
+      } 
+}
+.sti-menu li a h3{
+	font-family: 'open_sansregular';
+	font-size: $font-size-24;
+    text-transform: uppercase;
+	color: #fff;
+	position:absolute;
+	bottom:20px;
+	left:30px;
+	width:180px;
+    text-align: left;
+}
+.sti-icon{
+	position:absolute;
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-color:transparent;
+	top: 85px;
+    left:70px;
+   
+}
+.sti-icon-care{
+	background-image:url(../images/strategy-img.png);
+    width:100px;
+	height:104px;
+}
+.sti-icon-alternative{
+	background-image:url(../images/ui-img.png);
+    width:120px;
+	height:122px;
+}
+.sti-icon-family{
+	background-image:url(../images/website-img.png);
+    width:109px;
+	height:104px;
+}
+.sti-icon-info{
+	background-image:url(../images/seo-img.png);
+    width: 105px;
+    height: 105px;
+}
+}
+
+
+
+
 .service {
   background: $service-bg-color;
   .service-bg-line {
@@ -774,4 +879,192 @@ line {
     text-align: center;
   }
   
+}
+
+
+
+/* testimonials section */
+
+.testimonial {
+  position: relative;
+  margin-bottom: 80px;
+  
+  .bg {
+    background: $testimonial-bg;
+    width: 100%;
+    height: 550px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .line {
+    margin: 25px 48.8% 0;
+  }
+  
+  .title {
+    text-align: center;
+    color: $white;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    span {
+      width: 100%;
+      text-align: center;
+      font-family: "ss-light";
+      float: left;
+      font-size: $font-size-36;
+    }
+  }
+  
+  
+    figure  {
+      overflow: inherit;
+      height: 470px;
+      background: $testimonial-bg;
+      
+      figcaption {
+        
+        h2 {
+          font-family: "ss-bold";
+          color: $black;
+        }
+        p {
+          color: $black;
+        }
+        
+      }
+      .image {
+      position: absolute;
+      bottom: -80px;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+        opacity: 0;
+        @include transition(0.5s);
+    }
+        .icon {
+        position: absolute;
+        bottom: 18%;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+          width: auto;
+          opacity: 1;
+      }
+      .description {
+        margin-top: 40px;
+        color: $white;
+        opacity: 0;
+        @include transition(0.5s);
+      }
+      
+      
+        &:hover {
+        .image {
+          opacity: 1;
+        }
+        
+        .icon {
+          opacity: 0;
+        }
+          .description {
+            opacity: 1;
+            
+          }
+      }
+      
+      
+  }
+  
+}
+
+
+
+/* Social media section start */
+
+.social-section {
+  padding-top: 80px;
+    ul {
+        margin: 0;
+      padding: 0;
+      
+      li {
+          list-style-type: none;
+          display: inline;
+        float: left;
+          width: 20%;
+          text-align: center;
+          padding: 20px 0;
+        height: 50px;
+        position: relative;
+        box-sizing: content-box;
+        
+        span {
+          width: auto;
+          text-align: center;
+          color: $white;
+          opacity: 0;
+          @include transition(0.7s);
+          position: absolute;
+          top: 50%;
+          right: -50%;
+          transform: translate(50%, -50%);
+          -webkit-transform: translate(50%, -50%);
+          -moz-transform: translate(50%, -50%);
+        }
+        
+        img {
+          width: auto;
+          @include transition(0.7s);
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+        }
+        
+        &:hover {
+              img {
+                left: 10%;
+                transform: translate(-10%, -50%);
+                -webkit-transform: translate(-10%, -50%);
+                -moz-transform: translate(-10%, -50%);
+              }
+              
+               span {
+                 
+                    right: 10%;
+                    transform: translate(-10%, -50%);
+                    -webkit-transform: translate(-10%, -50%);
+                    -moz-transform: translate(-10%, -50%);
+                    opacity: 1;
+                  }
+            }
+        
+          &:nth-child(1) {
+            background: $facebook;
+            
+          }
+        
+        &:nth-child(2) {
+            background: $twitter;
+          }
+        
+        &:nth-child(3) {
+            background: $linkedin;
+          }
+        
+        &:nth-child(4) {
+            background: $dribble;
+          }
+        
+        &:nth-child(5) {
+            background: $github;
+          }
+      }
+     }
 }
