@@ -470,12 +470,12 @@ $(document.body).on('appear', '.animatedParent', function(e, $affected){
   
 });
 
- /*$(document.body).on('disappear', '.animatedParent', function(e, $affected) {
+/* $(document.body).on('disappear', '.animatedParent', function(e, $affected) {
   if(!$(this).hasClass('animateOnce')){
     $(this).find('.animated').removeClass('go');
    }
  });*/
 
- $(window).load(function(){
+/* $(window).load(function(){
   $.force_appear();
- });
+ });*/
