@@ -441,7 +441,7 @@ line {
   .sti-menu{
 	width:100%;
 	position:relative;
-	margin: 45px 0 0 0;
+	margin: 47px 0 0 0;
     padding: 0;
 }
 .sti-menu li{
@@ -452,10 +452,21 @@ line {
     border: #fff 4px solid;
     margin: 0 15px;
     list-style-type: none;
+    position: relative;
   
   @media screen and(max-width:$md){
     width: 21.8%;
     margin: 0 10px;
+  }
+  
+  &:before {
+    content: "";
+    background: url(../images/service-dot.png) no-repeat;
+    position: absolute;
+    top: -33px;
+    left: 48%;
+    width: 20px;
+    height: 20px;
   }
   
 }
@@ -540,7 +551,7 @@ line {
   .title {
     text-align: right;
     color: $white;
-    margin-top: 8.5%;
+    margin-top: 7%;
   }
   .service-block-wrapper {
     margin-top: 5.5%;
@@ -1001,6 +1012,7 @@ line {
         height: 50px;
         position: relative;
         box-sizing: content-box;
+        cursor: pointer;
         
         span {
           width: auto;
@@ -1067,4 +1079,120 @@ line {
           }
       }
      }
+}
+
+
+/* contact us section */
+
+.contact-us {
+  background: $grey;
+  padding: 50px 0;
+  .title {
+    text-align: center;
+    color: $white;
+    margin: 0 0 50px 0;
+  }
+  
+  .contact-block {
+    color: $white;
+    text-align: center;
+    border-right: 1px solid #383838;
+    
+    &:last-child {
+      border: none;
+    }
+    
+    a {
+      color: $white;
+    }
+    
+    p {
+      padding: 15px 0;
+      margin: 0;
+      font-family: "ss-bold";
+      font-size: $font-size-22;
+      text-transform: uppercase;
+      
+    }
+  }
+}
+
+
+/* footer section */
+
+.footer {
+  background: $dark-grey;
+  padding: 30px 0;
+  color: $white;
+  
+  
+  .address {
+    padding-left: 70px;
+    
+    &:before {
+      content: "";
+      background: url(../images/footer-address-icon.png) no-repeat;
+      width: 29px;
+      height: 28px;
+      position: absolute;
+      top: 10px;
+      left: 15px;
+    }
+    
+    h4 {
+      color: $white;
+      font-family: "ss-bold";
+      text-transform: uppercase;
+      font-size: $font-size-22;
+      
+      &:nth-child(3) {
+        margin-top: 40px;
+      }
+    }
+  }
+  
+  .newsletter {
+    padding-left: 70px;
+    
+    &:before {
+      content: "";
+      background: url(../images/newsletter-icon.png) no-repeat;
+      width: 29px;
+      height: 28px;
+      position: absolute;
+      top: 10px;
+      left: 15px;
+    }
+    
+    h4 {
+      color: $white;
+      font-family: "ss-bold";
+      text-transform: uppercase;
+    }
+    
+    span{
+      font-size: $font-size-14;
+      float: right;
+    }
+    
+    .input-group {
+      
+        input {
+        background: #2f2f2f;
+        border-radius: 0;
+        border: none;
+        margin: 20px 0;
+      }
+      
+      button {
+        height: 34px;
+        width: 50px;
+        border-radius: 0;
+        background: url(../images/footer-mail-icon.png) no-repeat #2f2f2f;
+        background-position: 10px 6px;
+        border: none;
+      }
+    }
+  }
+  
 }
