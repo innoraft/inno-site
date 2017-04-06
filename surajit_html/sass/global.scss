@@ -26,11 +26,14 @@ body {
 
 
 .title {
-    font-size: 3.5rem;
+    font-size: $font-size-56;
     font-family: "ss-bold";
     text-transform: uppercase;
     margin-top: 7%;
     color: #1c1c1c;
+  @media screen and (max-width: $xs) {
+      font-size: $font-size-48;
+  }
     span {
       width: 100%;
       text-align: center;

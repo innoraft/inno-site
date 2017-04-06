@@ -48,7 +48,13 @@ body {
   margin-top: 7%;
   color: #1c1c1c;
 }
-/* line 34, ../sass/global.scss */
+@media screen and (max-width: 480px) {
+  /* line 28, ../sass/global.scss */
+  .title {
+    font-size: 3rem;
+  }
+}
+/* line 37, ../sass/global.scss */
 .title span {
   width: 100%;
   text-align: center;
