@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'compass';
+
+@mixin default-button ($bak-color, $border-color, $color, $hover-bg, $hover-color, $hover-border-color) {
+  background: $bak-color;
+  border: 1px solid $border-color;
+  padding: 15px 20px;
+  width: 240px;
+  color: $color;
+  border-radius: 0;
+  font-size: $font-size-20;
+  margin-top: 30px;
+  @include transition(0.5s);
+  text-transform: uppercase;
+  
+  &:hover {
+    background: $hover-bg;
+    color: $hover-color;
+    border-color: $hover-border-color;
+  }
+}

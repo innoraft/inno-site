@@ -1,0 +1,47 @@
+// Importing Libraries.
+@import 'partials/importer';
+
+// Global Defaults Elements.
+html {
+  font-size: 12px;
+
+  @media screen and (min-width: $md) {
+    font-size: 13px;
+    
+  }
+
+  @media screen and (min-width: $lg) {
+    font-size: 16px;
+  }
+}
+
+body {
+  font-size: $font-size-16;
+  color: $base-font-color;
+  line-height: 24px;
+  overflow-x: hidden;
+  font-family: "ss-light";
+}
+
+
+
+.title {
+    font-size: $font-size-56;
+    font-family: "ss-bold";
+    text-transform: uppercase;
+    margin-top: 7%;
+    color: #1c1c1c;
+  @media screen and (max-width: $xs) {
+      font-size: $font-size-48;
+  }
+    span {
+      width: 100%;
+      text-align: center;
+      font-family: "ss-light";
+      float: left;
+      font-size: $font-size-36;
+    }
+}
+
+
+ 
