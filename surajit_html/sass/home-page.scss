@@ -484,6 +484,74 @@ line {
 }
 
 // BLOCK 2 CSS START BELOW 
+.about-lines {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  .full {
+    width: 100%;
+    height: 100%;
+    background: #d0d0d0;
+  }
+  .arrow1 {
+    position: absolute;
+    top: 158px;
+    left: 30%;
+  }
+  .arrow2 {
+    position: absolute;
+    top: 190px;
+    right: 18.8%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+  }
+  .arrow3 {
+    position: absolute;
+    bottom: 0;
+    right: 9px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+  }
+  .line1 {
+    width: 6px;
+    height: 75px;
+    overflow: hidden;
+  }
+  .line11 {
+    width: 6px;
+    height: 30px;
+    overflow: hidden;
+    margin-top: 65px;
+  }
+  .line2 {
+    width: 80%;
+    height: 6px;
+    overflow: hidden;
+  }
+  .line3 {
+    width: 6px;
+    height: 75px;
+    margin-left: 79.5%;
+    overflow: hidden;
+  }
+  .line4 {
+    width: 18.5%;
+    height: 6px;
+    margin-left: 79.5%;
+    overflow: hidden;
+  }
+  .line5 {
+    width: 6px;
+    height: 300px;
+    margin-right: 24px;
+    float: right;
+    overflow: hidden;
+  }
+}
+
 .block2 {
   position: relative;
   height: 100%;
