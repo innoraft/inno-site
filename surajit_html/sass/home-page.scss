@@ -8,6 +8,7 @@
 
 .header {
   background: $header-color;
+  position: relative;
   .top-header {
     .logo {
       width: auto;
@@ -251,7 +252,7 @@
     color: $white;
     position: absolute;
     bottom: 15%;
-    left: -2%;
+    left: -50px;
     transform: rotate(-90deg);
     font-size: $font-size-18;
     font-family: "ss-light";
@@ -260,7 +261,7 @@
       left: -6%;
     }
     @media screen and (max-width: $xs) {
-      bottom: 50px;
+      bottom: 70px;
       left: -44px;
     }
   }
@@ -269,8 +270,12 @@
     height: 87%;
     .banner-line {
       position: absolute;
-      bottom: 37px;
+      bottom: 7px;
       left: 9px;
+      @media screen and (max-width: $lg) {
+        bottom: 40px;
+        left: 0;
+      }
       @media screen and (max-width: $md) {
         bottom: 81px;
         left: 0;
@@ -307,7 +312,8 @@
       }
       @media screen and (max-width: $sm) {
         width: 100%;
-        margin: 10px 0 0 25px;
+        margin: 10px 0 0 0;
+        padding-left: 25px;
       }
       p {
         font-family: "ss-bold";
@@ -1430,6 +1436,7 @@ line {
       position: relative;
       box-sizing: content-box;
       cursor: pointer;
+      overflow: hidden;
       @media screen and (max-width: $sm) {
         width: 100%;
       }
