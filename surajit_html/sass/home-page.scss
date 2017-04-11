@@ -8,6 +8,7 @@
 
 .header {
   background: $header-color;
+  position: relative;
   .top-header {
     .logo {
       width: auto;
@@ -251,7 +252,7 @@
     color: $white;
     position: absolute;
     bottom: 15%;
-    left: -2%;
+    left: -50px;
     transform: rotate(-90deg);
     font-size: $font-size-18;
     font-family: "ss-light";
@@ -260,7 +261,7 @@
       left: -6%;
     }
     @media screen and (max-width: $xs) {
-      bottom: 50px;
+      bottom: 70px;
       left: -44px;
     }
   }
@@ -269,8 +270,12 @@
     height: 87%;
     .banner-line {
       position: absolute;
-      bottom: 37px;
+      bottom: 7px;
       left: 9px;
+      @media screen and (max-width: $lg) {
+        bottom: 40px;
+        left: 0;
+      }
       @media screen and (max-width: $md) {
         bottom: 81px;
         left: 0;
@@ -307,7 +312,8 @@
       }
       @media screen and (max-width: $sm) {
         width: 100%;
-        margin: 10px 0 0 25px;
+        margin: 10px 0 0 0;
+        padding-left: 25px;
       }
       p {
         font-family: "ss-bold";
@@ -478,6 +484,74 @@ line {
 }
 
 // BLOCK 2 CSS START BELOW 
+.about-lines {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  .full {
+    width: 100%;
+    height: 100%;
+    background: #d0d0d0;
+  }
+  .arrow1 {
+    position: absolute;
+    top: 158px;
+    left: 30%;
+  }
+  .arrow2 {
+    position: absolute;
+    top: 190px;
+    right: 18.8%;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+  }
+  .arrow3 {
+    position: absolute;
+    bottom: 0;
+    right: 9px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+  }
+  .line1 {
+    width: 6px;
+    height: 75px;
+    overflow: hidden;
+  }
+  .line11 {
+    width: 6px;
+    height: 30px;
+    overflow: hidden;
+    margin-top: 65px;
+  }
+  .line2 {
+    width: 80%;
+    height: 6px;
+    overflow: hidden;
+  }
+  .line3 {
+    width: 6px;
+    height: 75px;
+    margin-left: 79.5%;
+    overflow: hidden;
+  }
+  .line4 {
+    width: 18.5%;
+    height: 6px;
+    margin-left: 79.5%;
+    overflow: hidden;
+  }
+  .line5 {
+    width: 6px;
+    height: 300px;
+    margin-right: 24px;
+    float: right;
+    overflow: hidden;
+  }
+}
+
 .block2 {
   position: relative;
   height: 100%;
@@ -789,6 +863,7 @@ line {
   background: $process-bg;
   position: relative;
   overflow: hidden;
+  min-height: 1335px;
   @media screen and(max-width: $sm) {
     padding-bottom: 7%;
   }
@@ -1430,6 +1505,7 @@ line {
       position: relative;
       box-sizing: content-box;
       cursor: pointer;
+      overflow: hidden;
       @media screen and (max-width: $sm) {
         width: 100%;
       }
