@@ -863,6 +863,7 @@ line {
   background: $process-bg;
   position: relative;
   overflow: hidden;
+  min-height: 1335px;
   @media screen and(max-width: $sm) {
     padding-bottom: 7%;
   }
